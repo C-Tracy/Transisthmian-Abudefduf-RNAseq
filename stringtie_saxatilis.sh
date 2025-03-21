@@ -20,5 +20,8 @@ samplelist="S_C_M_E26 S_C_M_E27 S_C_M_E28 S_C_M_E30 S_C_M_E56 S_C_M_E57 S_C_M_E5
 for sample in ${samplelist}
 do
         mkdir stringtie_results/${sample}
-        stringtie -p 48 -e -B -G ~/Eirlys_Files/new_run_eggnog/a_saxatilis/a_saxatilis.emapper.decorated.gtf -o stringtie_results/${sample}/${sample}.gtf mapping_hisat/${sample}_sorted.bam
+        #use the following line if mapping to saxatilis genome
+        #stringtie -p 48 -e -B -G ~/Eirlys_Files/new_run_eggnog/a_saxatilis/a_saxatilis.emapper.decorated.gtf -o stringtie_results/${sample}/${sample}.gtf mapping_hisat/${sample}_sorted.bam
+        #use the following line if mapping to troschelii genome
+        stringtie -p 48 -e -B -G ~/Eirlys_Files/new_run_eggnog/a_troschelii/a_troschelii.emapper.decorated.gtf -o stringtie_results/${sample}/${sample}.gtf mapping_hisat/${sample}_sorted.bam
 done
