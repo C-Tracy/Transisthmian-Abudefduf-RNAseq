@@ -4,6 +4,13 @@ Repository for project comparing the response of A. saxatilis vs. A. troschelii 
 
 Overview
 
+Initial QC - run fastqc.sh
+
+Trimmomatic - run trimmomatic.sh
+
+Post Trim QC - run fastqc_posttrim.sh
+
+
 Installing AGAT as a conda virtual environment
 
 ```
