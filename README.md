@@ -20,3 +20,10 @@ Run AGAT to convert gff to gtf
 ```
 sbatch agat_script.sh
 ```
+
+Run hisat2 to create an index for each genome and map trimmed reads
+
+Run stringtie 
+
+Run prepDE
+
