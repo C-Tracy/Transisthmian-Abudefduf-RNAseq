@@ -4,14 +4,10 @@ Repository for project comparing the response of A. saxatilis vs. A. troschelii 
 
 Overview
 
-Initial QC - run fastqc.sh
-
-Trimmomatic - run trimmomatic.sh
-
-Post Trim QC - run fastqc_posttrim.sh
-
-
-Installing AGAT as a conda virtual environment
+1. Initial QC - run fastqc.sh
+2. Trimmomatic - run trimmomatic.sh
+3. Post Trim QC - run fastqc_posttrim.sh
+4. Installing AGAT as a conda virtual environment
 
 ```
 module load python/anaconda/3.12.7
@@ -22,15 +18,13 @@ source deactivate
 
 ```
 
-Run AGAT to convert gff to gtf
+5. Run AGAT to convert gff to gtf
 
 ```
 sbatch agat_script.sh
 ```
 
-Run hisat2 to create an index for each genome and map trimmed reads
-
-Run stringtie 
-
-Run prepDE
+6. Run hisat2 to create an index for each genome and map trimmed reads
+7. Run stringtie
+8. Run prepDE
 
