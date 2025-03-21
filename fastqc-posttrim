@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --partition=investor_bg4
+#SBATCH --ntasks=40
+#SBATCH --mem=40G
+#SBATCH --nodes=1
+#SBATCH --time=10:00:00
+#SBATCH --job-name=fastqc
+
+module load java/15.0.1
+module load fastqc/0.12.0
+
+#cd RNA-seq-Second-run-Feb2025/01.RawData/
+cd usftp21.novogene.com/01.RawData/
+
+fastqc */*_paired.fq.gz -t 40 -o /scratch/cbt0022/Panama_Exp_RNAseq/filtered_reports/
