@@ -26,5 +26,14 @@ sbatch agat_script.sh
 
 6. Run hisat2 to create an index for each genome and map trimmed reads
 7. Run stringtie
-8. Run prepDE
+8. Run prepDE from within DE folder
 
+```
+which python #confirm python 3
+
+module load python/3.9.2
+
+#this will combine ALL samples within the stringtie_results folder into  gene and trnascript count matrices
+python prepDE.py3 -i ../stringtie_results/ -g gene_count_matrix.csv -t transcript_count_matrix.csv
+
+```
