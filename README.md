@@ -1,5 +1,5 @@
 # Transisthmian-Abudefduf-RNAseq
-Repository for project comparing the response of A. saxatilis vs. A. troschelii to heatwave, control, and cold-water upwelling temperature conditions. 
+Repository for manuscript comparing the response of A. saxatilis vs. A. troschelii to heatwave, control, and cold-water upwelling temperature conditions. The comparison is of differential gene expression of muscle tissue resulting from an aquarium experiment run at Smithsonian Tropical Research Institute by Claire B. Tracy, Laura Lardinois, and Caitlin (Cricket) McNally. 
 
 
 Overview
