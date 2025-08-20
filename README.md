@@ -37,3 +37,6 @@ module load python/3.9.2
 python prepDE.py3 -i ../stringtie_results/ -g gene_count_matrix.csv -t transcript_count_matrix.csv
 
 ```
+
+9. Run DEseq2 on output from prepDE, configuring your random effects and variable of interest according to your analysis.
+10. Run WGCNA
